@@ -1,0 +1,32 @@
+.experienceBar {
+  display: flex;
+  /* Alinhar verticalmente */
+  align-items: center;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+}
+
+.experienceBar > div {
+  /* Ocupar a largura máxima do container */
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBar > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
+}
+
+span.currentExperience {
+  position: absolute;
+  top: 12px;
+  /* Macete para centralizar o texto no meio da barra */
+  transform: translateX(-50%);
+}
